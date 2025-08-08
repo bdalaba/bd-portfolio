@@ -26,15 +26,14 @@ export function About() {
             
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I'm a full-stack developer with over 5 years of experience building scalable web applications. 
-                My journey started with a Computer Science degree, but my passion for creating meaningful 
-                digital experiences drives everything I do.
+                I design and build digital experiences using a blend of code, creativity, and AI.
+                My focus is rapid prototyping, clean UI, and turning ideas into usable tools or products with modern tech.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                When I'm not coding, you'll find me contributing to open source projects, writing technical 
-                articles, or exploring the latest frameworks and technologies. I believe in continuous 
-                learning and sharing knowledge with the developer community.
+                I enjoy experimenting with emerging technologies, creating interactive prototypes, and 
+                bridging the gap between design and development. My approach combines technical expertise 
+                with creative thinking to solve complex problems in simple, elegant ways.
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-6">

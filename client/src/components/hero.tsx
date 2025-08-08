@@ -38,12 +38,12 @@ export function Hero() {
               </h1>
               
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light">
-                Full Stack Developer
+                Creative Technologist
               </h2>
               
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                I craft seamless digital experiences with modern technologies. Passionate about clean code, 
-                innovative solutions, and turning complex problems into elegant applications.
+                I design and build digital experiences using a blend of code, creativity, and AI.
+                My focus is rapid prototyping, clean UI, and turning ideas into usable tools or products with modern tech.
               </p>
             </div>
 
