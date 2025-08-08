@@ -107,9 +107,7 @@ export function Hero() {
                 <div className="space-y-2 text-sm">
                   <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">technologist</span> = {`{`}</div>
                   <div className="ml-4">name: <span className="text-tech-green">"Brendon Dalaba"</span>,</div>
-                  <div className="ml-4">tools: <span className="text-tech-green">["Cursor", "Claude", "Replit"]</span>,</div>
-                  <div className="ml-4">creative: <span className="text-tech-green">["Midjourney", "DALL·E"]</span>,</div>
-                  <div className="ml-4">deploy: <span className="text-tech-green">["Vercel", "Netlify"]</span></div>
+                  <div className="ml-4">skills: <span className="text-tech-green">["AI Development", "UI Design", "Rapid Prototyping"]</span></div>
                   <div>{`};`}</div>
                 </div>
               </div>
