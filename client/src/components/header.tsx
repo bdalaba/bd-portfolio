@@ -46,9 +46,9 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
-              <span className="text-white font-mono font-bold text-sm">AC</span>
+              <span className="text-white font-mono font-bold text-sm">BD</span>
             </div>
-            <span className="font-mono font-semibold text-lg">Alex Chen</span>
+            <span className="font-mono font-semibold text-lg">Brendon Dalaba</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

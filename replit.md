@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack portfolio website built for Alex Chen, a full-stack developer. The application showcases a professional portfolio with sections for about, skills, projects, and contact information. It features a clean, responsive design with modern UI components and smooth animations.
+This is a modern full-stack portfolio website built for Brendon Dalaba, a full-stack developer. The application showcases a professional portfolio with sections for about, skills, projects, and contact information. It features a clean, responsive design with modern UI components and smooth animations.
 
 ## User Preferences
 

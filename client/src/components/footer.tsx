@@ -5,7 +5,7 @@ export function Footer() {
     { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
     { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:alex.chen@example.com", label: "Email" }
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:brendon.dalaba@example.com", label: "Email" }
   ];
 
   return (
@@ -14,9 +14,9 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <div className="w-8 h-8 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
-              <span className="text-white font-mono font-bold text-sm">AC</span>
+              <span className="text-white font-mono font-bold text-sm">BD</span>
             </div>
-            <span className="font-mono font-semibold text-lg">Alex Chen</span>
+            <span className="font-mono font-semibold text-lg">Brendon Dalaba</span>
           </div>
 
           <div className="flex items-center space-x-6 mb-4 md:mb-0">

@@ -49,22 +49,22 @@ export function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-white" />,
       title: "Email",
-      value: "alex.chen@example.com",
-      href: "mailto:alex.chen@example.com",
+      value: "brendon.dalaba@example.com",
+      href: "mailto:brendon.dalaba@example.com",
       gradient: "from-tech-blue to-tech-purple"
     },
     {
       icon: <Linkedin className="h-6 w-6 text-white" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/alexchen",
-      href: "https://linkedin.com/in/alexchen",
+      value: "linkedin.com/in/brendondalaba",
+      href: "https://linkedin.com/in/brendondalaba",
       gradient: "from-tech-green to-tech-blue"
     },
     {
       icon: <Github className="h-6 w-6 text-white" />,
       title: "GitHub",
-      value: "github.com/alexchen",
-      href: "https://github.com/alexchen",
+      value: "github.com/brendondalaba",
+      href: "https://github.com/brendondalaba",
       gradient: "from-tech-purple to-tech-green"
     }
   ];
@@ -115,7 +115,7 @@ export function Contact() {
                   </div>
                   <div className="space-y-1 text-xs">
                     <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">contact</span> = {`{`}</div>
-                    <div className="ml-4">email: <span className="text-tech-green">"alex.chen@example.com"</span>,</div>
+                    <div className="ml-4">email: <span className="text-tech-green">"brendon.dalaba@example.com"</span>,</div>
                     <div className="ml-4">status: <span className="text-tech-green">"available"</span>,</div>
                     <div className="ml-4">response_time: <span className="text-tech-green">"24h"</span></div>
                     <div>{`};`}</div>

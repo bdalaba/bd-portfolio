@@ -34,7 +34,7 @@ export function Hero() {
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 <span>Hi, I'm</span>{" "}
-                <span className="gradient-text">Alex Chen</span>
+                <span className="gradient-text">Brendon Dalaba</span>
               </h1>
               
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light">
@@ -95,7 +95,7 @@ export function Hero() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:alex.chen@example.com"
+                href="mailto:brendon.dalaba@example.com"
                 className="text-muted-foreground hover:text-tech-blue transition-colors"
                 data-testid="link-email"
               >
@@ -123,7 +123,7 @@ export function Hero() {
                   </div>
                   <div className="space-y-1 text-xs">
                     <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">developer</span> = {`{`}</div>
-                    <div className="ml-4">name: <span className="text-tech-green">"Alex Chen"</span>,</div>
+                    <div className="ml-4">name: <span className="text-tech-green">"Brendon Dalaba"</span>,</div>
                     <div className="ml-4">skills: <span className="text-tech-green">["React", "Node.js"]</span></div>
                     <div>{`};`}</div>
                   </div>
