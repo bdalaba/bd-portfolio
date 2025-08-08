@@ -47,10 +47,10 @@ export function Contact() {
 
   const contactInfo = [
     {
-      icon: <Mail className="h-6 w-6 text-white" />,
-      title: "Email",
-      value: "brendon.dalaba@example.com",
-      href: "mailto:brendon.dalaba@example.com",
+      icon: <Github className="h-6 w-6 text-white" />,
+      title: "GitHub",
+      value: "github.com/brendondalaba",
+      href: "https://github.com/brendondalaba",
       gradient: "from-tech-blue to-tech-purple"
     },
     {
@@ -61,10 +61,10 @@ export function Contact() {
       gradient: "from-tech-green to-tech-blue"
     },
     {
-      icon: <Github className="h-6 w-6 text-white" />,
-      title: "GitHub",
-      value: "github.com/brendondalaba",
-      href: "https://github.com/brendondalaba",
+      icon: <Mail className="h-6 w-6 text-white" />,
+      title: "Email",
+      value: "brendon.dalaba@example.com",
+      href: "mailto:brendon.dalaba@example.com",
       gradient: "from-tech-purple to-tech-green"
     }
   ];
