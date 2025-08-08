@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Twitter, Mail, ArrowRight, Code } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight, Code } from "lucide-react";
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -84,15 +84,6 @@ export function Hero() {
                 data-testid="link-linkedin"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-tech-blue transition-colors"
-                data-testid="link-twitter"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
               <a 
                 href="mailto:brendon.dalaba@example.com"

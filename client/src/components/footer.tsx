@@ -1,10 +1,9 @@
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export function Footer() {
   const socialLinks = [
     { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
     { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
     { icon: <Mail className="h-5 w-5" />, href: "mailto:brendon.dalaba@example.com", label: "Email" }
   ];
 
