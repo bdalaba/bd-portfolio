@@ -27,7 +27,7 @@ export function About() {
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-muted-foreground">
                 I'm a creative technologist who thrives in the space between raw code and rapid execution.
-                With a foundation in React, HTML/CSS, and JS—and powered by tools like Cursor, Replit, Claude Claude, and ChatGPT—I build prototypes, streamline workflows, and bring ideas to life fast.
+                With a foundation in React, HTML/CSS, and JS—and powered by tools like Cursor, Replit, Claude Code, and ChatGPT—I build prototypes, streamline workflows, and bring ideas to life fast.
                 My projects often blend design (Canva, Figma), AI (LLM's, DALL·E, Midjourney), and code into usable solutions that solve real problems.
               </p>
 
