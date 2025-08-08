@@ -15,13 +15,31 @@ export function About() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Clean developer workspace with laptop, code editor, and modern setup" 
-                className="rounded-xl shadow-lg w-full h-auto"
-                data-testid="about-image"
-              />
+            <div className="code-block p-6 rounded-xl">
+              <div className="font-mono text-sm">
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full" />
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full" />
+                  <div className="w-3 h-3 bg-green-500 rounded-full" />
+                  <span className="text-muted-foreground ml-2">workflow.js</span>
+                </div>
+                <div className="space-y-2 text-xs">
+                  <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">myWorkflow</span> = {`{`}</div>
+                  <div className="ml-4">ideation: <span className="text-tech-green">"rapid prototyping"</span>,</div>
+                  <div className="ml-4">tools: [<span className="text-tech-green">"React"</span>, <span className="text-tech-green">"Cursor"</span>, <span className="text-tech-green">"Claude"</span>],</div>
+                  <div className="ml-4">design: [<span className="text-tech-green">"Figma"</span>, <span className="text-tech-green">"Canva"</span>],</div>
+                  <div className="ml-4">ai_integration: [<span className="text-tech-green">"LLMs"</span>, <span className="text-tech-green">"DALL·E"</span>],</div>
+                  <div className="ml-4">deployment: <span className="text-tech-green">"Replit"</span>,</div>
+                  <div className="ml-4">approach: <span className="text-tech-green">"build fast, iterate faster"</span></div>
+                  <div>{`};`}</div>
+                  <div className="pt-2"></div>
+                  <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">buildProject</span> = <span className="text-tech-purple">async</span> (idea) =&gt; {`{`}</div>
+                  <div className="ml-4"><span className="text-tech-purple">const</span> prototype = <span className="text-tech-purple">await</span> rapidBuild(idea);</div>
+                  <div className="ml-4"><span className="text-tech-purple">const</span> feedback = getUserFeedback(prototype);</div>
+                  <div className="ml-4"><span className="text-tech-purple">return</span> iterate(prototype, feedback);</div>
+                  <div>{`};`}</div>
+                </div>
+              </div>
             </div>
             
             <div className="space-y-6">
@@ -30,21 +48,6 @@ export function About() {
                 With a foundation in React, HTML/CSS, and JS—and powered by tools like Cursor, Replit, Claude Code, and ChatGPT—I build prototypes, streamline workflows, and bring ideas to life fast.
                 My projects often blend design (Canva, Figma), AI (LLM's, DALL·E, Midjourney), and code into usable solutions that solve real problems.
               </p>
-
-              <div className="grid grid-cols-2 gap-6 pt-6">
-                <Card className="text-center p-4 bg-muted/50">
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-tech-blue mb-2" data-testid="stat-projects">50+</div>
-                    <div className="text-sm text-muted-foreground">Projects Completed</div>
-                  </CardContent>
-                </Card>
-                <Card className="text-center p-4 bg-muted/50">
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-tech-green mb-2" data-testid="stat-experience">5+</div>
-                    <div className="text-sm text-muted-foreground">Years Experience</div>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
           </div>
         </div>
