@@ -26,14 +26,9 @@ export function About() {
             
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I design and build digital experiences using a blend of code, creativity, and AI.
-                My focus is rapid prototyping, clean UI, and turning ideas into usable tools or products with modern tech.
-              </p>
-              
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                I enjoy experimenting with emerging technologies, creating interactive prototypes, and 
-                bridging the gap between design and development. My approach combines technical expertise 
-                with creative thinking to solve complex problems in simple, elegant ways.
+                I'm a creative technologist who thrives in the space between raw code and rapid execution.
+                With a foundation in React, HTML/CSS, and JS—and powered by tools like Cursor, Replit, Claude, and ChatGPT—I build prototypes, streamline workflows, and bring ideas to life fast.
+                My projects often blend design (Canva, Figma), AI (DALL·E, Midjourney), and code into usable solutions that solve real problems.
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-6">
