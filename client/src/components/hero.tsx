@@ -29,7 +29,7 @@ export function Hero() {
                 data-testid="availability-badge"
               >
                 <Code className="mr-2 h-4 w-4" />
-                <span className="font-mono text-sm">Available for hire</span>
+                <span className="font-mono text-sm">Getting after it</span>
               </Badge>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
