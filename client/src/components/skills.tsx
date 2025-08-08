@@ -1,26 +1,32 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Server, Cloud } from "lucide-react";
+import { Code, Palette, Brain, Cloud } from "lucide-react";
 
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Dev Tools",
       icon: <Code className="h-6 w-6 text-white" />,
       gradient: "from-tech-blue to-tech-purple",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind", "Vue.js"]
+      skills: ["HTML", "CSS", "JavaScript", "Shad/cn", "Tailwind", "Bootstrap", "React", "Replit", "Cursor", "Claude Code"]
     },
     {
-      title: "Backend",
-      icon: <Server className="h-6 w-6 text-white" />,
+      title: "Creative Tools",
+      icon: <Palette className="h-6 w-6 text-white" />,
       gradient: "from-tech-green to-tech-blue",
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+      skills: ["Canva", "Midjourney", "DALL·E"]
     },
     {
-      title: "DevOps",
-      icon: <Cloud className="h-6 w-6 text-white" />,
+      title: "AI & Automation",
+      icon: <Brain className="h-6 w-6 text-white" />,
       gradient: "from-tech-purple to-tech-green",
-      skills: ["Docker", "AWS", "Kubernetes", "GitHub Actions", "Vercel"]
+      skills: ["ChatGPT", "Claude", "GitHub"]
+    },
+    {
+      title: "Deployment",
+      icon: <Cloud className="h-6 w-6 text-white" />,
+      gradient: "from-tech-blue to-tech-green",
+      skills: ["Netlify", "Vercel", "GitHub Pages"]
     }
   ];
 
@@ -37,7 +43,7 @@ export function Skills() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, index) => (
               <Card 
                 key={category.title}
