@@ -8,7 +8,7 @@ export function Projects() {
   const projects = [
     {
       title: "Dutchulator",
-      description: "Dutchulator is a sleek score tracker for Dutch Blitz—built for speed, accuracy, and a touch of game-night flair.",
+      description: "A sleek score tracker for Dutch Blitz—built for speed, accuracy, and a touch of game-night flair.",
       image: dutchulatorLogo,
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
       github: "https://github.com/bdalaba",
