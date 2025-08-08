@@ -15,7 +15,7 @@ export function About() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="code-block p-6 rounded-xl">
+            <div className="code-block p-6 rounded-xl animate-float">
               <div className="font-mono text-sm">
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full" />

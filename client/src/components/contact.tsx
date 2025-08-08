@@ -105,7 +105,7 @@ export function Contact() {
               ))}
 
               {/* Code block decoration */}
-              <div className="code-block p-4 rounded-lg">
+              <div className="code-block p-4 rounded-lg animate-float">
                 <div className="font-mono text-sm">
                   <div className="flex items-center space-x-2 mb-3">
                     <div className="w-3 h-3 bg-red-500 rounded-full" />
