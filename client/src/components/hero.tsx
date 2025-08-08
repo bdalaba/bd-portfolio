@@ -95,32 +95,22 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern tech workspace with multiple monitors and clean setup" 
-                className="w-full h-auto"
-                data-testid="hero-image"
-              />
-              
-              {/* Floating Code Block */}
-              <div className="absolute top-4 right-4 p-4 rounded-lg border border-tech-blue/20">
-                <div className="font-mono text-sm">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full" />
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full" />
-                    <div className="w-3 h-3 bg-green-500 rounded-full" />
-                    <span className="text-muted-foreground ml-2 text-xs">technologist.js</span>
-                  </div>
-                  <div className="space-y-1 text-xs">
-                    <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">technologist</span> = {`{`}</div>
-                    <div className="ml-4">name: <span className="text-tech-green">"Brendon Dalaba"</span>,</div>
-                    <div className="ml-4">tools: <span className="text-tech-green">["Cursor", "Claude", "Replit"]</span>,</div>
-                    <div className="ml-4">creative: <span className="text-tech-green">["Midjourney", "DALL·E"]</span>,</div>
-                    <div className="ml-4">deploy: <span className="text-tech-green">["Vercel", "Netlify"]</span></div>
-                    <div>{`};`}</div>
-                  </div>
+          <div className="relative flex justify-center">
+            <div className="code-block p-6 rounded-xl animate-float max-w-md w-full">
+              <div className="font-mono text-sm">
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full" />
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full" />
+                  <div className="w-3 h-3 bg-green-500 rounded-full" />
+                  <span className="text-muted-foreground ml-2 text-sm">technologist.js</span>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">technologist</span> = {`{`}</div>
+                  <div className="ml-4">name: <span className="text-tech-green">"Brendon Dalaba"</span>,</div>
+                  <div className="ml-4">tools: <span className="text-tech-green">["Cursor", "Claude", "Replit"]</span>,</div>
+                  <div className="ml-4">creative: <span className="text-tech-green">["Midjourney", "DALL·E"]</span>,</div>
+                  <div className="ml-4">deploy: <span className="text-tech-green">["Vercel", "Netlify"]</span></div>
+                  <div>{`};`}</div>
                 </div>
               </div>
             </div>
