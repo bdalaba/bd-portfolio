@@ -35,7 +35,7 @@ export function Footer() {
           </div>
 
           <div className="text-sm text-muted-foreground font-mono flex items-center">
-            © 2025 Built with <Heart className="h-4 w-4 text-tech-blue mx-1" /> by Brendon
+            © 2025 Built with <Heart className="h-4 w-4 text-tech-blue mx-1" />by Brendon
           </div>
         </div>
       </div>
