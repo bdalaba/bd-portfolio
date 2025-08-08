@@ -105,17 +105,20 @@ export function Hero() {
               />
               
               {/* Floating Code Block */}
-              <div className="absolute top-4 right-4 code-block p-4 rounded-lg backdrop-blur-lg">
-                <div className="font-mono text-sm text-tech-green">
+              <div className="absolute top-4 right-4 p-4 rounded-lg border border-tech-blue/20">
+                <div className="font-mono text-sm">
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="w-3 h-3 bg-red-500 rounded-full" />
                     <div className="w-3 h-3 bg-yellow-500 rounded-full" />
                     <div className="w-3 h-3 bg-green-500 rounded-full" />
+                    <span className="text-muted-foreground ml-2 text-xs">technologist.js</span>
                   </div>
                   <div className="space-y-1 text-xs">
-                    <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">developer</span> = {`{`}</div>
+                    <div><span className="text-tech-purple">const</span> <span className="text-tech-blue">technologist</span> = {`{`}</div>
                     <div className="ml-4">name: <span className="text-tech-green">"Brendon Dalaba"</span>,</div>
-                    <div className="ml-4">skills: <span className="text-tech-green">["React", "Node.js"]</span></div>
+                    <div className="ml-4">tools: <span className="text-tech-green">["Cursor", "Claude", "Replit"]</span>,</div>
+                    <div className="ml-4">creative: <span className="text-tech-green">["Midjourney", "DALL·E"]</span>,</div>
+                    <div className="ml-4">deploy: <span className="text-tech-green">["Vercel", "Netlify"]</span></div>
                     <div>{`};`}</div>
                   </div>
                 </div>
