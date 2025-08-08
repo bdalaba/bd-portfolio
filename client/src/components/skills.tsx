@@ -17,16 +17,16 @@ export function Skills() {
       skills: ["Canva", "Midjourney", "DALL·E"]
     },
     {
-      title: "AI & Automation",
+      title: "AI Assistants",
       icon: <Brain className="h-6 w-6 text-white" />,
       gradient: "from-tech-purple to-tech-green",
-      skills: ["ChatGPT", "Claude", "GitHub"]
+      skills: ["ChatGPT", "Claude"]
     },
     {
       title: "Deployment",
       icon: <Cloud className="h-6 w-6 text-white" />,
       gradient: "from-tech-blue to-tech-green",
-      skills: ["Netlify", "Vercel", "GitHub Pages"]
+      skills: ["Netlify", "Vercel", "GitHub"]
     }
   ];
 
