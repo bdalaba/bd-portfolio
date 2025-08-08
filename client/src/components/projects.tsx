@@ -2,16 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import dutchulatorLogo from "@assets/dutchulator-logo_1754661104524.png";
 
 export function Projects() {
   const projects = [
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      title: "Dutchulator",
+      description: "Dutchulator is a sleek score tracker for Dutch Blitz—built for speed, accuracy, and a touch of game-night flair.",
+      image: dutchulatorLogo,
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
       github: "https://github.com/bdalaba",
-      live: "https://example.com"
+      live: "https://dutchulator.replit.app/"
     },
     {
       title: "E-Commerce Platform",
