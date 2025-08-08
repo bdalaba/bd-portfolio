@@ -10,7 +10,7 @@ export function About() {
               <span className="gradient-text">About Me</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Passionate developer with a love for clean code and innovative solutions
+              Turning Ideas into Interfaces — Fast, Smart, Beautiful.
             </p>
           </div>
 
