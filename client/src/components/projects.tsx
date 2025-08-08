@@ -10,7 +10,7 @@ export function Projects() {
       description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com",
+      github: "https://github.com/bdalaba",
       live: "https://example.com"
     },
     {
@@ -18,7 +18,7 @@ export function Projects() {
       description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard for business owners.",
       image: "https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tech: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-      github: "https://github.com",
+      github: "https://github.com/bdalaba",
       live: "https://example.com"
     },
     {
@@ -26,7 +26,7 @@ export function Projects() {
       description: "Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting features for business insights.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
-      github: "https://github.com",
+      github: "https://github.com/bdalaba",
       live: "https://example.com"
     }
   ];
@@ -130,7 +130,7 @@ export function Projects() {
               data-testid="button-view-all-projects"
             >
               <a 
-                href="https://github.com" 
+                href="https://github.com/bdalaba" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
