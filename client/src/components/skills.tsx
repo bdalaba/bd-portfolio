@@ -8,7 +8,7 @@ export function Skills() {
       title: "Dev Tools",
       icon: <Code className="h-6 w-6 text-white" />,
       gradient: "from-tech-blue to-tech-purple",
-      skills: ["HTML", "CSS", "JavaScript", "Shad/cn", "Tailwind", "Bootstrap", "React", "Replit", "Cursor", "Claude Code"]
+      skills: ["Cursor", "Claude Code", "Replit"]
     },
     {
       title: "Creative Tools",
