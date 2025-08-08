@@ -1,0 +1,76 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Code, Server, Cloud } from "lucide-react";
+
+export function Skills() {
+  const skillCategories = [
+    {
+      title: "Frontend",
+      icon: <Code className="h-6 w-6 text-white" />,
+      gradient: "from-tech-blue to-tech-purple",
+      skills: ["React", "TypeScript", "Next.js", "Tailwind", "Vue.js"]
+    },
+    {
+      title: "Backend",
+      icon: <Server className="h-6 w-6 text-white" />,
+      gradient: "from-tech-green to-tech-blue",
+      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+    },
+    {
+      title: "DevOps",
+      icon: <Cloud className="h-6 w-6 text-white" />,
+      gradient: "from-tech-purple to-tech-green",
+      skills: ["Docker", "AWS", "Kubernetes", "GitHub Actions", "Vercel"]
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              <span className="gradient-text">Tech Stack</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Technologies I love working with
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {skillCategories.map((category, index) => (
+              <Card 
+                key={category.title}
+                className="hover:shadow-xl transition-shadow duration-300 border-border"
+                data-testid={`skill-category-${category.title.toLowerCase()}`}
+              >
+                <CardHeader>
+                  <div className="flex items-center mb-4">
+                    <div className={`w-12 h-12 bg-gradient-to-r ${category.gradient} rounded-lg flex items-center justify-center mr-4`}>
+                      {category.icon}
+                    </div>
+                    <CardTitle className="text-xl font-semibold">{category.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <Badge 
+                        key={skill}
+                        variant="outline"
+                        className="tech-badge font-mono text-sm"
+                        data-testid={`skill-${skill.toLowerCase()}`}
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(248 15% 97%);
+  --foreground: hsl(210 25% 7.8431%);
+  --card: hsl(248 15% 97%);
+  --card-foreground: hsl(210 25% 7.8431%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 25% 7.8431%);
+  --primary: hsl(217 91% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 25% 7.8431%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(240 1.9608% 90%);
+  --muted-foreground: hsl(210 25% 7.8431%);
+  --accent: hsl(215 27% 92%);
+  --accent-foreground: hsl(217 91% 60%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(217 91% 60%);
+  --chart-1: hsl(217 91% 60%);
+  --chart-2: hsl(160 84% 39%);
+  --chart-3: hsl(43 74% 66%);
+  --chart-4: hsl(27 87% 67%);
+  --chart-5: hsl(12 76% 61%);
+  --sidebar: hsl(248 15% 97%);
+  --sidebar-foreground: hsl(210 25% 7.8431%);
+  --sidebar-primary: hsl(217 91% 60%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(215 27% 92%);
+  --sidebar-accent-foreground: hsl(217 91% 60%);
+  --sidebar-border: hsl(214 32% 91%);
+  --sidebar-ring: hsl(217 91% 60%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 0.75rem;
+  
+  /* Tech colors */
+  --tech-blue: hsl(217 91% 60%);
+  --tech-green: hsl(160 84% 39%);
+  --tech-purple: hsl(262 83% 58%);
+  --dark-bg: hsl(222 84% 5%);
+  --dark-card: hsl(217 33% 17%);
+  --dark-border: hsl(215 28% 33%);
+}
+
+.dark {
+  --background: hsl(222 84% 5%);
+  --foreground: hsl(210 40% 98%);
+  --card: hsl(217 33% 17%);
+  --card-foreground: hsl(210 40% 98%);
+  --popover: hsl(222 84% 5%);
+  --popover-foreground: hsl(210 40% 98%);
+  --primary: hsl(217 91% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(217 33% 17%);
+  --secondary-foreground: hsl(210 40% 98%);
+  --muted: hsl(217 33% 17%);
+  --muted-foreground: hsl(215 20.2% 65.1%);
+  --accent: hsl(217 33% 17%);
+  --accent-foreground: hsl(210 40% 98%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(215 28% 33%);
+  --input: hsl(215 28% 33%);
+  --ring: hsl(217 91% 60%);
+  --chart-1: hsl(217 91% 60%);
+  --chart-2: hsl(160 84% 39%);
+  --chart-3: hsl(43 74% 66%);
+  --chart-4: hsl(27 87% 67%);
+  --chart-5: hsl(12 76% 61%);
+  --sidebar: hsl(217 33% 17%);
+  --sidebar-foreground: hsl(210 40% 98%);
+  --sidebar-primary: hsl(217 91% 60%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(217 33% 17%);
+  --sidebar-accent-foreground: hsl(210 40% 98%);
+  --sidebar-border: hsl(215 28% 33%);
+  --sidebar-ring: hsl(217 91% 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, var(--tech-blue), var(--tech-green), var(--tech-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .code-block {
+    background: linear-gradient(135deg, hsla(217, 91%, 60%, 0.1), hsla(262, 83%, 58%, 0.1));
+    border: 1px solid hsla(217, 91%, 60%, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .project-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.02));
+    backdrop-filter: blur(10px);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px hsla(217, 91%, 60%, 0.1);
+  }
+  
+  .tech-badge {
+    background: linear-gradient(135deg, hsla(217, 91%, 60%, 0.1), hsla(160, 84%, 39%, 0.1));
+    border: 1px solid hsla(217, 91%, 60%, 0.2);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glow {
+    from { box-shadow: 0 0 5px var(--tech-blue); }
+    to { box-shadow: 0 0 20px var(--tech-blue), 0 0 30px var(--tech-blue); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
