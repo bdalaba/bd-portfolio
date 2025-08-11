@@ -13,23 +13,24 @@ export function Projects() {
       tech: ["React", "Typescript", "Tailwind"],
       github: "https://github.com/bdalaba/dutchulator",
       live: "https://dutchulator.netlify.app/"
-    },
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard for business owners.",
-      image: "https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tech: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-      github: "https://github.com/bdalaba",
-      live: "https://example.com"
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting features for business insights.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
-      github: "https://github.com/bdalaba",
-      live: "https://example.com"
     }
+    // Commented out for later use:
+    // {
+    //   title: "E-Commerce Platform",
+    //   description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard for business owners.",
+    //   image: "https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    //   tech: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    //   github: "https://github.com/bdalaba",
+    //   live: "https://example.com"
+    // },
+    // {
+    //   title: "Analytics Dashboard",
+    //   description: "Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting features for business insights.",
+    //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    //   tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
+    //   github: "https://github.com/bdalaba",
+    //   live: "https://example.com"
+    // }
   ];
 
   return (
