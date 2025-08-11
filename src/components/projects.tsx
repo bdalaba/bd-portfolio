@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
-import dutchulatorLogo from "@assets/dutchulator-logo_1754661104524.png";
+import dutchulatorLogo from "/assets/dutchulator-logo_1754661104524.png";
 
 export function Projects() {
   const projects = [
@@ -33,10 +33,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-card/50">
+    <section id="projects" className="py-16 bg-card/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               <span className="gradient-text">Featured Projects</span>
             </h2>
@@ -123,7 +123,7 @@ export function Projects() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10">
             <Button 
               variant="outline"
               asChild

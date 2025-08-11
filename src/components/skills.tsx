@@ -31,10 +31,10 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               <span className="gradient-text">Tech Stack</span>
             </h2>
@@ -44,7 +44,7 @@ export function Skills() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skillCategories.map((category, index) => (
+            {skillCategories.map((category) => (
               <Card 
                 key={category.title}
                 className="hover:shadow-xl transition-shadow duration-300 border-border"

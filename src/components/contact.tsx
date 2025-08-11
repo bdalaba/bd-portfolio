@@ -70,10 +70,10 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               <span className="gradient-text">Get In Touch</span>
             </h2>
@@ -84,7 +84,7 @@ export function Contact() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
-              {contactInfo.map((contact, index) => (
+              {contactInfo.map((contact) => (
                 <div key={contact.title} className="flex items-start space-x-4">
                   <div className={`w-12 h-12 bg-gradient-to-r ${contact.gradient} rounded-lg flex items-center justify-center flex-shrink-0`}>
                     {contact.icon}
