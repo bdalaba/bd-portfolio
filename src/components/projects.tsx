@@ -10,9 +10,9 @@ export function Projects() {
       title: "Dutchulator",
       description: "A sleek score tracker for Dutch Blitz—built for speed, accuracy, and a touch of game-night flair.",
       image: dutchulatorLogo,
-      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/bdalaba",
-      live: "https://dutchulator.replit.app/"
+      tech: ["React", "Typescript", "Tailwind"],
+      github: "https://github.com/bdalaba/dutchulator",
+      live: "https://dutchulator.netlify.app/"
     },
     {
       title: "E-Commerce Platform",
