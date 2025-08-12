@@ -14,7 +14,7 @@ export function Skills() {
       title: "Creative Tools",
       icon: <Palette className="h-6 w-6 text-white" />,
       gradient: "from-tech-green to-tech-blue",
-      skills: ["Canva", "Midjourney", "DALL·E"]
+      skills: ["Canva", "Figma", "DALL·E"]
     },
     {
       title: "AI Assistants",

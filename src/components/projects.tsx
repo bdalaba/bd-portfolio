@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import dutchulatorLogo from "/assets/dutchulator-logo_1754661104524.png";
 
 export function Projects() {
@@ -11,8 +11,7 @@ export function Projects() {
       description: "A sleek score tracker for Dutch Blitz—built for speed, accuracy, and a touch of game-night flair.",
       image: dutchulatorLogo,
       tech: ["React", "Typescript", "Tailwind"],
-      github: "https://github.com/bdalaba/dutchulator",
-      live: "https://dutchulator.netlify.app/"
+      live: "https://dutchulator.app/"
     }
     // Commented out for later use:
     // {
@@ -65,40 +64,22 @@ export function Projects() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
-                    <div className="flex space-x-2">
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        asChild
-                        className="h-8 w-8"
-                        data-testid={`project-github-${index}`}
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      asChild
+                      className="h-8 w-8"
+                      data-testid={`project-live-${index}`}
+                    >
+                      <a 
+                        href={project.live} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label={`View ${project.title} live demo`}
                       >
-                        <a 
-                          href={project.github} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          aria-label={`View ${project.title} on GitHub`}
-                        >
-                          <Github className="h-4 w-4" />
-                        </a>
-                      </Button>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        asChild
-                        className="h-8 w-8"
-                        data-testid={`project-live-${index}`}
-                      >
-                        <a 
-                          href={project.live} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          aria-label={`View ${project.title} live demo`}
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                        </a>
-                      </Button>
-                    </div>
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
                   </div>
                 </CardHeader>
                 
@@ -124,23 +105,6 @@ export function Projects() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Button 
-              variant="outline"
-              asChild
-              className="border-tech-blue text-tech-blue hover:bg-tech-blue hover:text-white transition-colors"
-              data-testid="button-view-all-projects"
-            >
-              <a 
-                href="https://github.com/bdalaba" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <span>View All Projects</span>
-                <Github className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     </section>

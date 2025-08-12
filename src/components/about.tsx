@@ -28,7 +28,7 @@ export function About() {
                   <div className="ml-4">tools: [<span className="text-tech-green">"React"</span>, <span className="text-tech-green">"Cursor"</span>, <span className="text-tech-green">"Claude Code"</span>],</div>
                   <div className="ml-4">design: [<span className="text-tech-green">"Figma"</span>, <span className="text-tech-green">"Canva"</span>],</div>
                   <div className="ml-4">ai_integration: [<span className="text-tech-green">"LLMs"</span>, <span className="text-tech-green">"DALL·E"</span>, <span className="text-tech-green">"Midjourney"</span>],</div>
-                  <div className="ml-4">deployment: [<span className="text-tech-green">"Netlify"</span>, <span className="text-tech-green">"GitHub"</span>, <span className="text-tech-green">"Replit"</span>],</div>
+                  <div className="ml-4">deployment: [<span className="text-tech-green">"Netlify"</span>, <span className="text-tech-green">"Vercel"</span>, <span className="text-tech-green">"Replit"</span>],</div>
                   <div className="ml-4">approach: <span className="text-tech-green">"build fast, iterate faster"</span></div>
                   <div>{`};`}</div>
                   <div className="pt-2"></div>

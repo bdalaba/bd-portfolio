@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail, Linkedin } from "lucide-react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -14,8 +13,6 @@ export function Contact() {
     subject: "",
     message: ""
   });
-  const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,34 +22,18 @@ export function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-      });
-      setIsLoading(false);
-    }, 1000);
+    
+    const { name, email, subject, message } = formData;
+    const mailtoLink = `mailto:brendon.dalaba@pm.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+    
+    window.location.href = mailtoLink;
   };
 
   const contactInfo = [
-    {
-      icon: <Github className="h-6 w-6 text-white" />,
-      title: "GitHub",
-      value: "github.com/bdalaba",
-      href: "https://github.com/bdalaba",
-      gradient: "from-tech-blue to-tech-purple"
-    },
     {
       icon: <Linkedin className="h-6 w-6 text-white" />,
       title: "LinkedIn",
@@ -189,10 +170,9 @@ export function Contact() {
                   <Button 
                     type="submit" 
                     className="w-full bg-tech-blue hover:bg-tech-blue/90 text-white"
-                    disabled={isLoading}
                     data-testid="button-submit"
                   >
-                    {isLoading ? "Sending..." : "Send Message"}
+                    Send Message
                   </Button>
                 </form>
               </CardContent>
