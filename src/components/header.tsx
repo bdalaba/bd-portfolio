@@ -109,7 +109,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
+          <div className="md:hidden mt-4 pb-4 border-t border-border bg-background/95 dark:bg-dark-bg/95 backdrop-blur-md rounded-lg">
             <div className="flex flex-col space-y-4 pt-4">
               <button 
                 onClick={() => scrollToSection("about")}
