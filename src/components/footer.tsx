@@ -2,8 +2,16 @@ import { Linkedin, Mail, Heart } from "lucide-react";
 
 export function Footer() {
   const socialLinks = [
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com/in/brendondalaba", label: "LinkedIn" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:brendon.dalaba@pm.me", label: "Email" }
+    {
+      icon: <Linkedin className="h-5 w-5" />,
+      href: "https://linkedin.com/in/brendondalaba",
+      label: "LinkedIn",
+    },
+    {
+      icon: <Mail className="h-5 w-5" />,
+      href: "mailto:brendon.dalaba@pm.me",
+      label: "Email",
+    },
   ];
 
   return (
@@ -14,7 +22,9 @@ export function Footer() {
             <div className="w-8 h-8 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
               <span className="text-white font-mono font-bold text-sm">BD</span>
             </div>
-            <span className="font-mono font-semibold text-lg">Brendon Dalaba</span>
+            <span className="font-mono font-semibold text-lg">
+              Brendon Dalaba
+            </span>
           </div>
 
           <div className="flex items-center space-x-6 mb-4 md:mb-0">
@@ -34,7 +44,8 @@ export function Footer() {
           </div>
 
           <div className="text-sm text-muted-foreground font-mono flex items-center">
-            © 2025 Built with <Heart className="h-4 w-4 text-tech-blue mx-1" />by Brendon
+            © 2025 Made with <Heart className="h-4 w-4 text-tech-blue mx-1" />
+            by Brendon
           </div>
         </div>
       </div>
