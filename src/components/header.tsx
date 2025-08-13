@@ -109,7 +109,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-full bg-background/95 dark:bg-dark-bg/95 backdrop-blur-md border-t border-border">
+          <div className="md:hidden absolute left-0 right-0 top-full bg-background dark:bg-dark-bg backdrop-blur-lg border-t border-border shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex flex-col space-y-4">
               <button 
