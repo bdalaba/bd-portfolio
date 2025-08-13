@@ -60,18 +60,18 @@ export function Header() {
               About
             </button>
             <button 
-              onClick={() => scrollToSection("projects")}
-              className="text-muted-foreground hover:text-tech-blue transition-colors"
-              data-testid="nav-projects"
-            >
-              Projects
-            </button>
-            <button 
               onClick={() => scrollToSection("skills")}
               className="text-muted-foreground hover:text-tech-blue transition-colors"
               data-testid="nav-skills"
             >
               Skills
+            </button>
+            <button 
+              onClick={() => scrollToSection("projects")}
+              className="text-muted-foreground hover:text-tech-blue transition-colors"
+              data-testid="nav-projects"
+            >
+              Projects
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
@@ -109,21 +109,15 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border bg-background/95 dark:bg-dark-bg/95 backdrop-blur-md rounded-lg">
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden absolute left-0 right-0 top-full bg-background/95 dark:bg-dark-bg/95 backdrop-blur-md border-t border-border">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <div className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection("about")}
                 className="text-left text-muted-foreground hover:text-tech-blue transition-colors"
                 data-testid="mobile-nav-about"
               >
                 About
-              </button>
-              <button 
-                onClick={() => scrollToSection("projects")}
-                className="text-left text-muted-foreground hover:text-tech-blue transition-colors"
-                data-testid="mobile-nav-projects"
-              >
-                Projects
               </button>
               <button 
                 onClick={() => scrollToSection("skills")}
@@ -133,12 +127,20 @@ export function Header() {
                 Skills
               </button>
               <button 
+                onClick={() => scrollToSection("projects")}
+                className="text-left text-muted-foreground hover:text-tech-blue transition-colors"
+                data-testid="mobile-nav-projects"
+              >
+                Projects
+              </button>
+              <button 
                 onClick={() => scrollToSection("contact")}
                 className="text-left text-muted-foreground hover:text-tech-blue transition-colors"
                 data-testid="mobile-nav-contact"
               >
                 Contact
               </button>
+              </div>
             </div>
           </div>
         )}
